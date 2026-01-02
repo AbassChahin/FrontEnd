@@ -123,12 +123,16 @@ body {
 
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(5, minmax(220px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
+    justify-items: center;
+    padding: 2rem;
 }
 
 .game-card {
+    width: 100%;
+    max-width: 260px;
     background-color: #222;
     color: white;
     text-align: center;
