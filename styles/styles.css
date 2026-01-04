@@ -181,6 +181,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0 15rem;
 }
 
 .mission {
@@ -192,7 +193,7 @@ body {
 
 .mission-text-container {
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 5rem;
 }
 
 .mission-text-container h1 {
