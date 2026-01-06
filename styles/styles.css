@@ -98,6 +98,10 @@ body {
     padding: 0 1rem;
 }
 
+.search > h2 {
+    font-size: xx-large;
+}
+
 .search-elements > * {
     padding: 0.5rem;
 }
@@ -132,11 +136,11 @@ body {
 
 .game-card {
     width: 100%;
-    max-width: 260px;
+    max-width: 300px;
     background-color: #222;
     color: white;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -147,10 +151,10 @@ body {
 
 .game-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: block;
-    padding-bottom: 2rem;
-    border-radius: 5px;
+    padding-bottom: 1rem;
+    border-radius: 12px;
     filter: grayscale(50%);
 }
 
@@ -174,26 +178,35 @@ body {
     padding-bottom: 1.5rem;
 }
 
+.info-container > h3, p {
+    padding-bottom: 1rem;
+}
+
+.info-container > p {
+    font-size: x-large;
+}
+
 
 /* About Us Page */
 .section-container {
     height: 92%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 15rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 5rem 15rem;
 }
 
 .mission {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 0 2rem;
 }
 
 .mission-text-container {
     text-align: center;
-    padding: 0.5rem 5rem;
+    padding: 0 1rem;
 }
 
 .mission-text-container h1 {
@@ -201,82 +214,79 @@ body {
 }
 
 .mission-img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 350px; /* adjust this */
     height: auto;
     border-radius: 5px;
+    background-color: #f9f9f9;
 }
-
 
 /*  Contact Us Page */
-.contact-container {
-    height: 92%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.contact-section {
+  max-width: 600px;
+  margin: 6em auto;
+  padding: 3rem;
+  background-color: #ffffff; 
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.question-container {
-    padding: 2rem 2rem;
+.contact-section h2 {
+  margin-bottom: 0.5rem;
 }
 
-.question-container > p {
-    padding: 1rem 1rem;
+.contact-section p {
+  margin-bottom: 2rem;
+  color: #555;
 }
 
-.form-container {
-    padding: 2rem 2rem;
-    margin-right: 5%;
-    background-color: yellow;
-    border-radius: 5px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.form-container > div {
-    padding: 1rem 1rem;
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.name p {
-    font-weight: bold;
-    padding: 0.5rem;
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
 }
 
-.name input {
-    width: 100%;
-    padding: 0.5rem;
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
-.email p {
-    font-weight: bold;
-    padding: 0.5rem;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
 }
 
-.email input {
-    width: 100%;
-    padding: 0.5rem;
+button {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.message p {
-    font-weight: bold;
-    padding: 0.5rem;
+button:hover {
+  background-color: #4338ca;
 }
-
-.message textarea {
-    padding: 0.5rem;
-}
-
-.form-container button {
-    background-color: green;
-    color: white;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-
-.form-container button:hover {
-    background-color: var(--button-color);
-    cursor: pointer;
-}
-
 
 /* Footer */
 .footer {
@@ -284,5 +294,4 @@ body {
     padding: 1rem;
     background-color: #222;
     color: white;
-    margin-top: 2rem;
 }

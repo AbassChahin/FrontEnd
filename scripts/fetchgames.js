@@ -21,7 +21,7 @@ async function getGames() {
                     <img src="http://localhost:8080/${game.imagePath}" onerror="this.src='images/Game.png'" alt="${game.title}">
                     <div class="info-container">
                         <h3>${game.title}</h3>
-                        <p>${game.salePrice}</p>
+                        <p>$${game.salePrice}</p>
                         <button>Get Game</button>
                     </div>
             
