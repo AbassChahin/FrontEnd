@@ -67,7 +67,11 @@ body {
 
 .hero h2 {
     padding: 0.7rem;
-    font-size: xx-large;
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1.75rem;
 }
 
 .hero button {
@@ -77,7 +81,7 @@ body {
     border-radius: 5px;
     background-color: #621708;
     color: white;
-    cursor: pointer;
+    cursor: default;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -96,10 +100,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    gap: 1rem;
 }
 
 .search > h2 {
     font-size: xx-large;
+}
+
+.search-elements {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.search-elements input {
+    flex: 1;
+    min-width: 250px;
+    max-width: 50%;
 }
 
 .search-elements > * {
@@ -134,6 +153,25 @@ body {
     padding: 2rem;
 }
 
+.oops-error {
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+.oops-error h2 {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.oops-error p {
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
+.oops-error img {
+    max-width: 200px;
+}
+ 
 .game-card {
     width: 100%;
     max-width: 300px;
