@@ -19,6 +19,14 @@
         </header>
 
         <section class="contact-section">
+            <div class="success-message" id="successMessage">
+                <h3>Message Has Been Sent! Thank you for your time.</h3>
+            </div>
+
+            <div class="failure-message" id="failureMessage">
+                <h3>Internal Server Error. Message can not be sent at this time. Sorry.</h3>
+            </div>
+
             <h2>Contact Us</h2>
             <p>Have a question, suggestion, or found a deal we missed? Let us know.</p>
 
@@ -38,7 +46,7 @@
                 <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
                 </div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" id="submit">Send Message</button>
             </form>
         </section>
 
@@ -49,6 +57,6 @@
         <p> &copy; 2026 GameSnag - All rights reserved</p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/sendformdata.js"></script>
 </body>
 </html>
