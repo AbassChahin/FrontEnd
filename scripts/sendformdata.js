@@ -23,7 +23,7 @@ async function sendMessage() {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/api/v1/game/addmessage", {
+        const response = await fetch("http:/129.153.133.78:8080/api/v1/game/addmessage", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

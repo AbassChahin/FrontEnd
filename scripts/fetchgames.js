@@ -7,7 +7,7 @@ async function getGames() {
         gameGrid.innerHTML = "";
 
 
-        const response = await fetch("http://localhost:8080/api/v1/game/allgames");
+        const response = await fetch("http://129.153.133.78:8080/api/v1/game/allgames");
 
         if (!response.ok) {
             const newCard = document.createElement("div");
@@ -30,7 +30,7 @@ async function getGames() {
             newCard.classList.add("game-card");
 
             newCard.innerHTML = `
-                    <img src="http://localhost:8080/${game.imagePath}" onerror="this.src='images/Game.png'" alt="${game.title}">
+                    <img src="${game.imagePath}" onerror="this.src='images/Game.png'" alt="${game.title}">
                     <div class="info-container" id="${game.platform}">
                         <h3>${game.title}</h3>
                         <p>$${game.salePrice}</p>
