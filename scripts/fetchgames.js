@@ -6,8 +6,8 @@ async function getGames() {
         // Clear any potential cards already present
         gameGrid.innerHTML = "";
 
-
-        const response = await fetch("http://129.153.133.78:8080/api/v1/game/allgames");
+        const BACKEND_URL  = process.env.APP_BACKEND_URL;
+        const response = await fetch("/api/v1/game/allgames");
 
         if (!response.ok) {
             const newCard = document.createElement("div");
