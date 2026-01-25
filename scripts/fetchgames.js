@@ -6,7 +6,6 @@ async function getGames() {
         // Clear any potential cards already present
         gameGrid.innerHTML = "";
 
-        const BACKEND_URL  = process.env.APP_BACKEND_URL;
         const response = await fetch("/api/v1/game/allgames");
 
         if (!response.ok) {
